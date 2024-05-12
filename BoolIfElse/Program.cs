@@ -22,7 +22,9 @@ namespace BoolIfElse
             Console.WriteLine("3. Day of the week number outputter");
             Console.WriteLine("4. Loops");
             Console.WriteLine("5. Crocodile Game");
-            Console.WriteLine("6. Exit App");
+            Console.WriteLine("6. Print Person");
+            Console.WriteLine("7. Exit App");
+
             int menuChoice = int.Parse(Console.ReadLine());
             CheckInput(menuChoice);
         }
@@ -47,6 +49,9 @@ namespace BoolIfElse
                     CrocGame.CrocodileGame();
                     break;
                 case 6:
+                    PrintPerson.printperson();
+                    break;
+                case 7:
                     Environment.Exit(69);
                     break;
                 default:
@@ -56,7 +61,12 @@ namespace BoolIfElse
                     Main();
                     break;
             }
+
         }
+
+
     }
+
+
 }
 
